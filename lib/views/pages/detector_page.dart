@@ -105,7 +105,7 @@ class _DetectorPageState extends State<DetectorPage> {
               Text(
                 "Brain Tumor Detector",
                 style: TextStyle(
-                  fontSize: 32.0,
+                  fontSize: 24.0,
                   color: Colors.purple[700],
                   fontWeight: FontWeight.bold,
                   fontFamily: "Roboto",
@@ -145,9 +145,10 @@ class _DetectorPageState extends State<DetectorPage> {
               if (_output != null)
                 Text(
                   "$_result ${getConfidenceString(_confidence)}",
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.purple[700],
-                    fontSize: 32,
+                    fontSize: 24,
                   ),
                 ),
               const SizedBox(height: 40),
