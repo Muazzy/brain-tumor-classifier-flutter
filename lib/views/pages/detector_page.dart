@@ -56,7 +56,7 @@ class _DetectorPageState extends State<DetectorPage> {
       detectImage(_image!);
       _loading = false;
     } on PlatformException {
-      //
+      debugPrint('Platform exception');
     }
   }
 
